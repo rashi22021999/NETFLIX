@@ -3,6 +3,9 @@
 
 -create REACT APP
 -Configured tailwind css
+- Header
+-Login form
+-sign up form 
 
 
 #Features:
