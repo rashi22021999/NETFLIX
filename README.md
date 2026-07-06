@@ -4,8 +4,24 @@
 -create REACT APP
 -Configured tailwind css
 - Header
+-Routing of App
 -Login form
 -sign up form 
+- useRef hook 
+- Form validation
+- useRef hook
+-firebase set up
+- deploying app to production
+- create sign up user account
+- implement sign in user API
+- created redux store with userSlice
+- implemented sign out 
+- update profile
+
+
+
+
+
 
 
 #Features:
