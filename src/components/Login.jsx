@@ -14,7 +14,6 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
 const navigate = useNavigate();
-
 const dispatch = useDispatch();
 
 const name = useRef(null);
@@ -28,14 +27,13 @@ const password = useRef(null);
 
 
   const handleButtonClick = (e) => {
-    //  console.log("Button Clicked");
-
-    const message = checkValidData(email.current.value, password.current.value,  name.current?.value);
+  
+    const message = checkValidData(email.current.value, password.current.value, name.current?.value);
       setErrorMessage(message);
-  // console.log("Validation:", message);
+  
 
     if (message) return ;
-    // console.log("Calling Firebase...");
+   
 
     if(!isSignInForm){
       //  Sign up logic
@@ -83,7 +81,6 @@ const password = useRef(null);
 
   })
   .catch((error) => {
-    console.log(error);
     const errorCode = error.code;
     const errorMessage = error.message;
     setErrorMessage(errorCode + "-" + errorMessage);
