@@ -40,6 +40,9 @@
 - use Top Rated movies custom hooks
 - use movies custom hooks
 -upcoming movies custom hooks
+- GPT search feature
+- GPT search bar
+- Multi lang feature in our app
 
 
 

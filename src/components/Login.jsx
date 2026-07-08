@@ -7,6 +7,8 @@ import {auth} from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BACKGROUND_URL } from "../utils/constants";
+
 
 
 const Login = () => {
@@ -70,13 +72,11 @@ const password = useRef(null);
   }
    else{
     // sign in logic
-      console.log("Sign In clicked");
 
     signInWithEmailAndPassword(auth, email.current.value, password.current.value)
     .then((userCredential) => {
     const user = userCredential.user;
 
-    console.log(user);
        navigate("/browse")
 
   })
@@ -93,7 +93,7 @@ const password = useRef(null);
     <Header />
     
     <div className ="absolute">
-         <img src = "https://assets.nflxext.com/ffe/siteui/vlv3/2f42605e-e786-4a06-8612-ebc67c55ba6c/web/IN-en-20260629-TRIFECTA-perspective_76b17e8c-cff9-4c65-9938-08ca5029be6b_large.jpg" alt = "background"/>
+         <img src = {BACKGROUND_URL}  alt = "background"/>
     </div>
 
   <form 
