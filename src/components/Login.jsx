@@ -85,10 +85,8 @@ const password = useRef(null);
     const errorMessage = error.message;
     setErrorMessage(errorCode + "-" + errorMessage);
   });
-
     }
   }
-
 
   return (
     <div>

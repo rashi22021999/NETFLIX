@@ -10,13 +10,11 @@ import {USER_ICON} from "../utils/constants";
 
 
 const Header= () => {
-    console.log("header render");
     
 const navigate = useNavigate();
 const dispatch = useDispatch();
 
 const handleSignOut = () => {
-     console.log("Button clicked");
     signOut(auth).then(() => {
          console.log("User signed out");
 })
@@ -49,16 +47,16 @@ return () => unsubscribe();
 
 },[]);
 
-
     return(
         <div className = "absolute w-full z-50  px-15 bg-linear-to-b from-black flex justify-between">
 
-            <img className = "w-50"  src = {LOGO} alt = "logo"/>
+            <img className = "w-30 py-5"  src = {LOGO} alt = "logo"/>
 
 <div>
-<img className = "w-10" src = {USER_ICON} alt = "user Icon" />
 
-<button onClick = {handleSignOut} className = "text-white cursor-pointer font-bold flex"> Sign out </button>
+<img className = "w-9 py-2" src = {USER_ICON} alt = "user Icon" />
+
+<button onClick = {handleSignOut} className = "text-white cursor-pointer flex"> Sign out </button>
 </div>
 
         </div>

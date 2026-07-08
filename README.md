@@ -32,6 +32,16 @@
 - update store with trailer video data
 - embedded you tube video
 - embedded classes to make ain container look awesome
+- build secondary comp
+- Build movie list
+- build movie card
+- TMDB Image CDN URL
+- usePopular movies custom hooks
+- use Top Rated movies custom hooks
+- use movies custom hooks
+-upcoming movies custom hooks
+
+
 
 
 

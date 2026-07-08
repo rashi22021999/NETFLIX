@@ -6,8 +6,6 @@ import { useEffect } from "react";
 
 
 const useMovieTrailer = (movieId) => {
-
-    
   const dispatch = useDispatch();
     
     const getMovieVideos = async ()=> {
@@ -22,6 +20,7 @@ const useMovieTrailer = (movieId) => {
         const trailer = filterData.length ? filterData[0] : json.results[0];
       
         dispatch(addTrailerVideo(trailer));
+        
     }
     
     useEffect(()=> {
